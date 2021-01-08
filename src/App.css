@@ -2,9 +2,27 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.first {
+  visibility: hidden;
+  animation: diceAnimation forwards;
+  animation-delay: 2s;
+}
+
+/* animation: animation name animation duration animation direction */
+.second {
+  visibility: hidden;
+  animation: diceAnimation forwards;
+  animation-delay: 4s;
+}
+.third {
+  visibility: hidden;
+  animation: diceAnimation forwards;
+  animation-delay: 6s;
+}
+
+@keyframes diceAnimation {
+  from { visibility: hidden; }
+  to {visibility: visible}
 }
 
 @media (prefers-reduced-motion: no-preference) {
